@@ -15,31 +15,5 @@
     <h1>containers</h1>
     <div id="root">
     </div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script>
-        const container = React.createElement('div', {
-            id: 'container'
-        }, [
-            React.createElement('div', { class: 'row'}, 
-                [
-                    React.createElement('div', { class: 'col'}, 'col1'),
-                    React.createElement('div', { class: 'col'},  'col2')
-                ]), 
-            React.createElement('div', { class: 'row'},
-                [
-                    React.createElement('div', { class: 'col'}, 'col3'),
-                    React.createElement('div', { class: 'col'},  'col4')
-                ])
-           ]);
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(container);
-    </script>
-
-    <!-- <script>
-        const elem = document.createElement('h1');
-        elem.innerHTML = 'Hello World from Javascript';
-        document.getElementById('root').appendChild(elem);
-    </script> -->
-</body>
+    <script type="module" src="./index.js"></script>
 </html>
